@@ -1,4 +1,5 @@
-import Mainpage from "./main/page";
+import ReservationComponent from "@/components/reservation/page";
+import React from "react";
 export const metadata = {
   title: "분양사이트 테스트",
   description: "분양사이트 테스트",
@@ -17,6 +18,7 @@ export const metadata = {
     type: "website",
   },
 };
-export default function Home() {
-  return <Mainpage />;
+
+export default function Reservationpage() {
+  return <ReservationComponent />;
 }
