@@ -1,0 +1,7 @@
+.navlayout {
+  display: flex;
+  justify-content: space-between;
+}
+.navlayout div li {
+  display: flex;
+}

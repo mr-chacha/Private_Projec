@@ -2,6 +2,7 @@ import NavComponent from "@/components/nav/page";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import FooterComponent from "@/components/footer/page";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,11 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
+        <header style={{ height: "80px", background: "red" }}>
           <NavComponent />
         </header>
-        {children}
-        <footer>
+        <div style={{ margin: "0 auto", width: "1440px", background: "green" }}>
+          {children}
+        </div>
+        <footer style={{ height: "100px", background: "aqua" }}>
           <FooterComponent />
         </footer>
       </body>
